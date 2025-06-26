@@ -14,9 +14,13 @@ class AdRequest(BaseModel):
     value:str
     api_key:str
 
-
 @app.get("/")
 def test_get():
+    return {"message":"fast API test****"}
+
+
+@app.get("/han")
+def test_get1():
     return {"message":"fast API test****"}
 
 

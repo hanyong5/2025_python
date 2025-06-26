@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['kimchisup']
+
+roboflow:
+  workspace: hanyong5
+  project: foodimage-rtplk
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/hanyong5/foodimage-rtplk/dataset/1
