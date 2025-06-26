@@ -12,7 +12,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # 환경 변수 설정 (필요시)
-# ENV OPENAI_API_KEY=your_openai_api_key
+# ENV OPENAI_API_KEY=
 
 # Streamlit 실행
 CMD ["streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"] 
+
+
+#docker run -d --name gptview -p  8501:8501 --env OPENAI_API_KEY=your_openai_api_key gpt-trans
+#docker build -t gpt_trans .
